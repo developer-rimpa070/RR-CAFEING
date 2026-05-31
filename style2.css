@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+}
+
+button{
+    background-color: #f08804;
+}
+
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+a{
+    margin-right: 200px;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #e6d3b3;
+    font-family: cursive ;
+    text-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.7);
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, #5a3a2b, #6F4E37, #D2B48C);
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.image img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+}
+
+.image img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba( 0, 0, 0, 0.6);
+}
+
+.welcome{
+    font-size: 32px;
+    font-style: italic;
+    color: #f5deb3;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.price{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffe4c4;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.name{
+    font-size: 29px;
+    font-weight: bold;
+    color: #0d0904;
+    text-shadow: 1px 1px 6px white;
+}
+
+.button{
+    margin-left: 10px;
+    background-color: #6F4E37;
+    color: whitesmoke;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background-color: #8b5e3c;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.3);
+}
+
+.aboutcoffee{
+    background-image: url("https://coffeeza.in/cdn/shop/articles/Coffee_Beans_Blog_2048x.jpg?v=1670838724");
+    height: 670px;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    color: white;
+    text-align: center;
+}
+
+.aboutcoffee h1{
+ position: absolute;
+ top: 120px;
+ left: 50%;
+ transform: translateX(-50%);
+
+ font-size: 45px;
+ text-shadow: 2px 2px 10px black;
+}
+
+.aboutcoffee p{
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 70%;
+  font-size: 25px;
+  text-shadow: 2px 2px 10px black;
+}
+
+.aboutcoffee::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+    z-index: 1;
+
+    background: rgba(0,0,0,0.25);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 40px rgba(211, 185, 185, 0.4);
+}
+
+.content h1{
+    font-size: 55px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: #f8e7c2;
+
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8),
+    0px 0px 10px rgba( 255, 255, 255, 0.7),
+    2px 2px 8px black;
+    padding-top: 10px;
+    font-family: georgia;
+    font-size: 55px;
+    color: #f8e7c2;
+}
+
+.content p{
+    line-height: 45px;
+    font-size: 28px;
+    color: #f5f5f5;
+}
+
+.ifood img{
+   width: 250px;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 20px;
+   transition: 0.4s;
+   box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.3);
+}
+
+.ifood img:hover{
+    transform: translateY(-10PX);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.food{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.menu-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+    color: #2b1b12;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.menu-sub{
+    text-align: center;
+    color: #c2b8b3;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 10px auto 40px auto;
+    line-height: 1.6;
+}
+
+.food{
+    background: linear-gradient(to bottom, #b22222, #ffd27f);
+}
+
+.nfood{
+    font-size: 20px;
+    color: #2c1b12;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.pfood{
+    font-size: 18px;
+    color: #720a0a;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.order-btn{
+    margin: 10px 0 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #c0392b, #e67e22);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba( 0, 0, 0, 0.3);
+}
+
+.cola{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+    color: #2b1b12;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.cold-section{
+    padding: 20px;
+}
+
+.table-box{
+    width: 90%;
+    margin: auto;
+    background: #da9b4a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba( 0, 0, 0, 0.2);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+button{
+    background: brown;
+    color: rgb(233, 224, 224);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: darkred;
+    
+}
+
+.image{
+    min-height: 45vh;
+}
+
+h1{
+    text-shadow: 1px 1px 6px whitesmoke;
+}
+
+.review-section{
+    background: #d2b48c;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.review-heading{
+    font-size: 40px;
+    color: rgb(54, 45, 45);
+    margin-bottom: 40px;
+}
+
+.review-con{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.review-card{
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba( 0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+.review-card:hover{
+    transform: translateY(-10px);
+}
+
+.review-card p{
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.footer{
+    background: #2b1b14;
+    color: white;
+    padding: 40px 20px 10px ;
+    margin-top: 50px;
+}
+
+.footer-con{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-box{
+    width: 250px;
+    margin: 10px;
+}
+
+.footer-box h2, .footer-box h3{
+    color: #ffcc70;
+}
+
+.footer-box a:hover{
+    color: #ffcc70;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+}
